@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Source_Files/css/input.css" />
+    <link rel="stylesheet" href="/Source_Files/css/style.css" />
+    <title>Simon Game</title>
+  </head>
+  <body class="m-0 p-0 overflow-hidden bg-cyan-950 h-screen w-screen flex">
+    <div
+      class="h-screen w-full flex flex-col items-center font-mono text-gray-400"
+    >
+      <span class="text-3xl mt-8 md:mt-12 lg:mt-10 md:text-6xl lg:text-7xl"
+        >🟨🟩Simon Game🟦🟥</span
+      >
+      <span class="js-level text-2xl md:text-5xl mt-6 md:mt-10 lg:mt-8"
+        >Start Game</span
+      >
+      <div class="flex flex-col mt-8 md:mt-16 lg:mt-10 relative space-y-4">
+        <div class="flex flex-row space-x-4">
+          <button
+            class="1 h-36 w-36 bg-yellow-500 border border-black md:h-60 md:w-60"
+            id="y"
+          ></button>
+          <button
+            class="2 h-36 w-36 bg-green-500 border border-black md:h-60 md:w-60"
+            id="g"
+          ></button>
+        </div>
+        <div class="flex flex-row space-x-4">
+          <button
+            class="3 h-36 w-36 bg-blue-500 border border-black md:h-60 md:w-60"
+            id="b"
+          ></button>
+          <button
+            class="4 h-36 w-36 bg-red-500 border border-black md:h-60 md:w-60"
+            id="r"
+          ></button>
+        </div>
+        <button
+          class="js-play h-9 w-28 md:h-14 md:w-48 text-3xl top-[39%] md:top-[41.5%] left-1/2 -translate-x-1/2 bg-black/70 backdrop-blur-sm absolute rounded-full text-white/45 text-center md:text-4xl"
+        >
+          Play
+        </button>
+      </div>
+      <span class="js-counter text-2xl md:text-4xl mt-6 md:mt-10 lg:mt-8"
+        >0/0</span
+      >
+      <span class="js-score text-3xl md:text-5xl mt-3 md:mt-5">Score: N/A</span>
+      <button
+        class="js-reset w-28 h-7 md:h-11 md:w-44 border-black border rounded-md md:rounded-xl justify-center mt-5 md:mt-8 bg-red-500 text-black bg-opacity-70 hover:bg-opacity-80 hover:shadow-md"
+      >
+        Reset
+      </button>
+      <audio src="" class="js-player"></audio>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

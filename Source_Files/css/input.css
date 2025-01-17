@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.y {
+  @apply bg-yellow-600 border-[3px] border-black;
+}
+.g {
+  @apply bg-green-700 border-[3px] border-black;
+}
+.b {
+  @apply bg-blue-700 border-[3px] border-black;
+}
+.r {
+  @apply bg-red-700 border-[3px] border-black;
+}
+
+.w {
+  @apply bg-red-950;
+}
